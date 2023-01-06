@@ -1,6 +1,7 @@
 import functions_framework
-
+import os
 @functions_framework.http
 def main(request):
-
-   return 'Hello {}!'
+   # Get TOKEN from environment variable
+   TOKEN = os.environ.get('TOKEN')
+   return f'TOKEN: {TOKEN}!'
