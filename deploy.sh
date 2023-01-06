@@ -4,4 +4,5 @@ gcloud functions deploy echobot \
     --entry-point=main \
     --runtime=python310 \
     --trigger-http \
-    --allow-unauthenticated
+    --allow-unauthenticated \
+    --set-env-vars=TOKEN=$TOKEN,test=$test
