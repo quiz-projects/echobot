@@ -49,6 +49,6 @@ gcloud functions deploy echobot \
 To deploy the function, run the following command:
 
 ```bash
-./deploy.sh
+sh deploy.sh
 ```
 
