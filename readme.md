@@ -1,6 +1,29 @@
 # Deploy the function to the cloud
 
-## Instructions
+
+## Set Environment Variables
+
+The function requires the following environment variables to be set:
+
+- TOKEN: The token to use for the bot
+- test: The test to use for the bot
+
+To set the environment variables, run the following commands:
+
+```bash
+export TOKEN=<your token>
+export test=<your test>
+```
+
+## Set webhooks
+
+To set the webhooks, run the following command:
+
+```bash
+python setWebhooks.py
+```
+
+## Deploy the function
 
 1. Create a deploy script in the root of your project. The script should be named `deploy.sh` and should contain the following:
 
@@ -29,16 +52,3 @@ To deploy the function, run the following command:
 ./deploy.sh
 ```
 
-## Set Environment Variables
-
-The function requires the following environment variables to be set:
-
-- TOKEN: The token to use for the bot
-- test: The test to use for the bot
-
-To set the environment variables, run the following commands:
-    
-```bash
-export TOKEN=<your token>
-export test=<your test>
-```
